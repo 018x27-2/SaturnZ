@@ -5,9 +5,9 @@ local player = game.Players.LocalPlayer
 local userId = player.UserId
 local profilePictureUrl = string.format("https://www.roblox.com/headshot-thumbnail/image?userId=%d&width=420&height=420", userId)
 
---if game.CoreGui:FindFirstChild("SaturnZ") then
---game.CoreGui:FindFirstChild("SaturnZ"):Destroy()
---end
+if game.CoreGui:FindFirstChild("SaturnZ") then
+	game.CoreGui:FindFirstChild("SaturnZ"):Destroy()
+end
 
 local Library = {}
 function Library:CreateWindow()
@@ -82,7 +82,7 @@ function Library:CreateWindow()
 
 
 	SaturnZ.Name = "SaturnZ"
-	SaturnZ.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	SaturnZ.Parent = game.CoreGui
 
 	Main_1.Name = "Main"
 	Main_1.Parent = SaturnZ
