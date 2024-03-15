@@ -637,7 +637,7 @@ function Library:CreateWindow()
 	DiscordBtn_1.Size = UDim2.new(0, 40,0, 40)
 	DiscordBtn_1.Image = "rbxassetid://15410955577"
 	DiscordBtn_1.MouseButton1Click:Connect(function()
-		setclipboard("ADD_INVITE_HERE")
+		setclipboard("https://discord.com/invite/YgDjRE3eK6")
 	end)
 
 	QuickHacks_1.Name = "QuickHacks"
